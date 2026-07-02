@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Portfolio of a Data Analyst & MIS Executive — Excel, SQL, Power BI, Python dashboards and business insights." />
+<title>Deepak Bisht — Data Analyst & MIS Executive</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Loader -->
+<div class="loader" id="loader">
+  <div class="loader-inner"><span></span><span></span><span></span></div>
+</div>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="logo"><span>D.</span>Bisht</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-3"></div>
+    <div class="floating-shape shape-4"></div>
+    <canvas id="particles"></canvas>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="container hero-inner">
+    <div class="hero-left">
+      <p class="hero-eyebrow reveal">👋 Welcome to my portfolio</p>
+      <h1 class="hero-title reveal">Hello, I'm <span class="gradient-text">Deepak Bisht</span></h1>
+      <h2 class="hero-sub">
+        <span class="type-prefix">I'm a </span>
+        <span id="typed" class="typed"></span><span class="type-caret">|</span>
+      </h2>
+      <p class="hero-desc reveal">
+        I transform raw data into meaningful insights using
+        <strong>Excel</strong>, <strong>SQL</strong>, <strong>Power BI</strong>, and <strong>Python</strong> —
+        building dashboards and MIS reports that drive smarter business decisions.
+      </p>
+      <div class="hero-buttons reveal">
+        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-chart-line"></i> View Projects</a>
+        <a href="#contact" class="btn btn-ghost"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+      </div>
+      <div class="hero-socials reveal">
+        <a href="https://www.linkedin.com/in/deepak--bisht/" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/Deepak2004Bisht" aria-label="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:deepakbisht2777@gmail.com" aria-label="Email" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="profile-wrap">
+        <div class="profile-glow"></div>
+        <div class="profile-ring"></div>
+        <div class="profile-ring ring-2"></div>
+        <img src="images/profileImage.png" alt="Deepak Bisht" class="profile-img" />
+        <div class="floating-badge badge-1"><i class="fa-solid fa-database"></i> SQL</div>
+        <div class="floating-badge badge-2"><i class="fa-solid fa-chart-pie"></i> Power BI</div>
+        <div class="floating-badge badge-3"><i class="fa-brands fa-python"></i> Python</div>
+        <div class="floating-badge badge-4"><i class="fa-solid fa-table"></i> Excel</div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-hint">
+    <span></span>
+  </a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container about-grid">
+    <div class="about-image reveal">
+      <div class="about-image-inner">
+        <img src="images/profileImage.png" alt="Deepak Bisht" />
+      </div>
+      <div class="about-image-badge">
+        <div class="num">5</div>
+        <div class="lbl">Month<br/>Experience</div>
+      </div>
+    </div>
+    <div class="about-content">
+      <p class="section-eyebrow reveal">About Me</p>
+      <h2 class="section-title reveal">Turning <span class="gradient-text">data</span> into decisions.</h2>
+      <p class="section-lead reveal">
+        I'm a passionate <strong>Data Analyst</strong> and <strong>MIS Executive</strong> who enjoys solving
+        business problems using data. From cleaning messy datasets to designing interactive Power BI dashboards
+        and automating Excel reports, I help teams see the "why" behind the numbers and act with confidence.
+      </p>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal"><i class="fa-solid fa-table-cells"></i><span>Microsoft Excel</span></div>
+        <div class="skill-card reveal"><i class="fa-solid fa-square-poll-vertical"></i><span>Advanced Excel</span></div>
+        <div class="skill-card reveal"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+        <div class="skill-card reveal"><i class="fa-solid fa-chart-pie"></i><span>Power BI</span></div>
+        <div class="skill-card reveal"><i class="fa-brands fa-python"></i><span>Python</span></div>
+        <div class="skill-card reveal"><i class="fa-solid fa-broom"></i><span>Data Cleaning</span></div>
+        <div class="skill-card reveal"><i class="fa-solid fa-gauge-high"></i><span>Dashboards</span></div>
+        <div class="skill-card reveal"><i class="fa-solid fa-chart-column"></i><span>Data Visualization</span></div>
+        <div class="skill-card reveal"><i class="fa-solid fa-briefcase"></i><span>Business Analysis</span></div>
+        <div class="skill-card reveal"><i class="fa-solid fa-file-lines"></i><span>Reporting</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow reveal">Education</p>
+      <h2 class="section-title reveal">My learning <span class="gradient-text">journey</span></h2>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <span class="tl-date">2026 - Completed</span>
+          <h3>Bachelor of Computer Applications (BCA)</h3>
+          <p>Developing a strong interest in data analysis, statistics, and data-driven decision-making.</p>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <span class="tl-date">Ongoing</span>
+          <h3>Master of Computer Application(MCA)</h3>
+          <p></p>
+        </div>
+      </div>
+      <!-- <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <span class="tl-date">2024</span>
+          <h3>Data Analytics Course</h3>
+          <p>Hands-on training in Excel, SQL, Power BI and Python for real-world analytics.</p>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <span class="tl-date">2024</span>
+          <h3>MIS Executive Training</h3>
+          <p>Designing management information systems, KPI reports and automated dashboards.</p>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <span class="tl-date">Ongoing</span>
+          <h3>Professional Certifications</h3>
+          <p>Microsoft Power BI, Google Data Analytics, and advanced SQL certifications.</p>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow reveal">What I Do</p>
+      <h2 class="section-title reveal">Services that turn <span class="gradient-text">numbers into narratives</span></h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card glass reveal">
+        <div class="s-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+        <h3>Data Analysis</h3><p>Uncover trends, patterns and opportunities from your business data.</p>
+      </div>
+      <div class="service-card glass reveal">
+        <div class="s-icon"><i class="fa-solid fa-gauge-high"></i></div>
+        <h3>Dashboard Development</h3><p>Interactive dashboards that make KPIs instantly readable.</p>
+      </div>
+      <div class="service-card glass reveal">
+        <div class="s-icon"><i class="fa-solid fa-chart-pie"></i></div>
+        <h3>Power BI Reports</h3><p>End-to-end Power BI reports with drill-through and DAX measures.</p>
+      </div>
+      <div class="service-card glass reveal">
+        <div class="s-icon"><i class="fa-solid fa-table"></i></div>
+        <h3>Excel Automation</h3><p>Formulas, Power Query and macros to eliminate manual work.</p>
+      </div>
+      <div class="service-card glass reveal">
+        <div class="s-icon"><i class="fa-solid fa-database"></i></div>
+        <h3>SQL Queries</h3><p>Optimized queries, joins and stored procedures for clean data pipelines.</p>
+      </div>
+      <div class="service-card glass reveal">
+        <div class="s-icon"><i class="fa-solid fa-broom"></i></div>
+        <h3>Data Cleaning</h3><p>Transform messy raw data into analysis-ready datasets.</p>
+      </div>
+      <div class="service-card glass reveal">
+        <div class="s-icon"><i class="fa-solid fa-file-invoice"></i></div>
+        <h3>MIS Reporting</h3><p>Daily, weekly and monthly reports for management decisions.</p>
+      </div>
+      <div class="service-card glass reveal">
+        <div class="s-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <h3>Business Insights</h3><p>Actionable recommendations backed by data, not gut feeling.</p>
+      </div>
+      <div class="service-card glass reveal">
+        <div class="s-icon"><i class="fa-solid fa-bullseye"></i></div>
+        <h3>KPI Reporting</h3><p>Define, track and visualize the metrics that matter most.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow reveal">Projects</p>
+      <h2 class="section-title reveal">Selected <span class="gradient-text">dashboards & analyses</span></h2>
+    </div>
+
+    <div class="projects-grid">
+      <!-- card template repeats -->
+      <article class="project-card glass reveal">
+        <div class="project-img"><img src="images/proj-ola.jpg" alt="Ola Booking Dashboard" loading="lazy" /></div>
+        <div class="project-body">
+          <h3>Ola Booking Dashboard</h3>
+          <p>Ride volume, revenue and driver KPIs with drill-through by city and time.</p>
+          <div class="tags"><span>Power BI</span><span>DAX</span><span>SQL</span></div>
+          <div class="project-actions">
+            <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            <a href="#" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal">
+        <div class="project-img"><img src="images/proj-ipl.jpg" alt="IPL Cricket Dashboard" loading="lazy" /></div>
+        <div class="project-body">
+          <h3>IPL Cricket Dashboard</h3>
+          <p>Team, batsman and bowler performance across seasons with interactive filters.</p>
+          <div class="tags"><span>Power BI</span><span>Excel</span></div>
+          <div class="project-actions">
+            <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            <a href="#" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal">
+        <div class="project-img"><img src="images/proj-sales.jpg" alt="Sales Dashboard" loading="lazy" /></div>
+        <div class="project-body">
+          <h3>Sales Dashboard</h3>
+          <p>Regional sales, target vs actual and product-mix analysis for a retail company.</p>
+          <div class="tags"><span>Power BI</span><span>SQL</span><span>DAX</span></div>
+          <div class="project-actions">
+            <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            <a href="#" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal">
+        <div class="project-img"><img src="images/proj-hr.jpg" alt="HR Analytics Dashboard" loading="lazy" /></div>
+        <div class="project-body">
+          <h3>HR Analytics Dashboard</h3>
+          <p>Attrition, headcount and diversity insights to support people decisions.</p>
+          <div class="tags"><span>Power BI</span><span>Excel</span></div>
+          <div class="project-actions">
+            <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            <a href="#" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal">
+        <div class="project-img"><img src="images/proj-finance.jpg" alt="Finance Dashboard" loading="lazy" /></div>
+        <div class="project-body">
+          <h3>Finance Dashboard</h3>
+          <p>P&L, cash flow and expense analysis with month-over-month variance.</p>
+          <div class="tags"><span>Excel</span><span>Power Query</span></div>
+          <div class="project-actions">
+            <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            <a href="#" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal">
+        <div class="project-img"><img src="images/proj-customer.jpg" alt="Customer Analysis Dashboard" loading="lazy" /></div>
+        <div class="project-body">
+          <h3>Customer Analysis Dashboard</h3>
+          <p>RFM segmentation, retention cohorts and lifetime value estimates.</p>
+          <div class="tags"><span>Python</span><span>SQL</span><span>Power BI</span></div>
+          <div class="project-actions">
+            <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            <a href="#" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- TECHNICAL SKILLS -->
+<section id="skills" class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow reveal">Technical Skills</p>
+      <h2 class="section-title reveal">My <span class="gradient-text">toolbox</span></h2>
+    </div>
+
+    <div class="tools-grid">
+      <div class="tool-card reveal"><div class="tool-icon"><i class="fa-solid fa-table-cells"></i></div><h3>Microsoft Excel</h3><p>Pivot tables, VLOOKUP/XLOOKUP, Power Query, complex formulas and automated MIS reports.</p></div>
+      <div class="tool-card reveal"><div class="tool-icon"><i class="fa-solid fa-chart-pie"></i></div><h3>Power BI</h3><p>Interactive dashboards, DAX measures, data modeling and business-ready visualizations.</p></div>
+      <div class="tool-card reveal"><div class="tool-icon"><i class="fa-solid fa-database"></i></div><h3>SQL</h3><p>Joins, CTEs, window functions and query optimization across MySQL &amp; PostgreSQL.</p></div>
+      <div class="tool-card reveal"><div class="tool-icon"><i class="fa-brands fa-python"></i></div><h3>Python</h3><p>Data wrangling and analysis with Pandas, NumPy and Matplotlib for deeper insights.</p></div>
+      <div class="tool-card reveal"><div class="tool-icon"><i class="fa-solid fa-broom"></i></div><h3>Data Cleaning</h3><p>Handling missing values, deduplication and standardizing messy real-world datasets.</p></div>
+      <div class="tool-card reveal"><div class="tool-icon"><i class="fa-solid fa-chart-column"></i></div><h3>Data Visualization</h3><p>Turning raw numbers into clear charts and stories that drive decisions.</p></div>
+      <div class="tool-card reveal"><div class="tool-icon"><i class="fa-solid fa-briefcase"></i></div><h3>Business Analysis</h3><p>Translating business needs into KPIs, metrics and actionable reporting.</p></div>
+      <div class="tool-card reveal"><div class="tool-icon"><i class="fa-solid fa-file-lines"></i></div><h3>MIS Reporting</h3><p>Daily, weekly and monthly management reports with automation-friendly workflows.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow reveal">Experience</p>
+      <h2 class="section-title reveal">Where I've <span class="gradient-text">worked & learned</span></h2>
+    </div>
+
+    <div class="timeline right">
+      <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-card glass"><span class="tl-date">Jan 2025 - June 2025</span><h3>Frontend Development Internship</h3><p>Built responsive UIs with HTML/CSS/JS and collaborated with designers on live projects.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-card glass"><span class="tl-date">Feb 2026 - Jun 2026</span><h3>MIS Executive Intern</h3><p>Managed daily order tracking and MIS reporting by updating new and existing orders in Excel, monitoring task status in Wrike, ensuring timely closure of completed tasks, and maintaining data accuracy for operational efficiency.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-card glass"><span class="tl-date">Ongoing</span><h3>Dashboard Projects</h3><p>Delivered Power BI and Excel dashboards for sales, HR and finance use cases.</p></div></div>
+    </div>
+
+    <div class="counters">
+      <div class="counter glass reveal"><b class="count" data-target="35">0</b><span>Projects Completed</span></div>
+      <div class="counter glass reveal"><b class="count" data-target="20">0</b><span>Dashboards Created</span></div>
+      <div class="counter glass reveal"><b class="count" data-target="1200">0</b><span>Hours of Learning</span></div>
+      <div class="counter glass reveal"><b class="count" data-target="12">0</b><span>Certificates Earned</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <p class="section-eyebrow reveal">Contact</p>
+      <h2 class="section-title reveal">Let's build something with <span class="gradient-text">your data</span>.</h2>
+      <p class="section-lead reveal">Available for freelance analytics projects, MIS roles and dashboard consulting.</p>
+
+      <ul class="contact-list">
+        <li class="reveal"><span class="ci-icon"><i class="fa-solid fa-location-dot"></i></span><div><b>Location</b><p>Delhi, India</p></div></li>
+        <li class="reveal"><span class="ci-icon"><i class="fa-solid fa-phone"></i></span><div><b>Phone</b><p>+91 88104 73494</p></div></li>
+        <li class="reveal"><span class="ci-icon"><i class="fa-solid fa-envelope"></i></span><div><b>Email</b><p>deepakbisht2777@gmail.com</p></div></li>
+        <li class="reveal"><span class="ci-icon"><i class="fa-brands fa-linkedin-in"></i></span><div><b>LinkedIn</b><p>linkedin.com/in/deepak--bisht/</p></div></li>
+        <li class="reveal"><span class="ci-icon"><i class="fa-brands fa-github"></i></span><div><b>GitHub</b><p>github.com/Deepak2004Bisht</p></div></li>
+      </ul>
+    </div>
+
+    <form class="contact-form glass reveal" id="contactForm" novalidate>
+      <div class="row">
+        <div class="field"><label>Name</label><input type="text" name="name" required /></div>
+        <div class="field"><label>Email</label><input type="email" name="email" required /></div>
+      </div>
+      <div class="row">
+        <div class="field"><label>Phone</label><input type="tel" name="phone" /></div>
+        <div class="field"><label>Subject</label><input type="text" name="subject" required /></div>
+      </div>
+      <div class="field"><label>Message</label><textarea name="message" rows="5" required></textarea></div>
+      <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+        <span class="btn-label"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+        <span class="btn-loader"></span>
+      </button>
+      <p class="form-msg" id="formMsg"></p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#home" class="logo"><span>D.</span>Bisht</a>
+      <p class="footer-desc">Data Analyst & MIS Executive turning raw data into decisions.</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/deepak--bisht/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/Deepak2004Bisht" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:deepakbisht2777@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li></ul>
+    </div>
+    <div>
+      <h4>Skills</h4>
+      <ul><li>Power BI</li><li>Excel & SQL</li><li>Python</li><li>Data Visualization</li></ul>
+    </div>
+    <div>
+      <h4>Newsletter</h4>
+      <p class="footer-desc">Occasional notes on analytics & dashboards.</p>
+      <form class="footer-form" onsubmit="event.preventDefault();this.querySelector('input').value='';this.querySelector('span').textContent='Subscribed ✓';">
+        <input type="email" placeholder="your@email.com" required />
+        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+        <span class="fmsg"></span>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <p>© <span id="year"></span> Deepak Bisht. All rights reserved.</p>
+    <!-- <p>Built with ♥ using HTML, CSS & JavaScript.</p> -->
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
