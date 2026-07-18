@@ -361,7 +361,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .tl-item:nth-child(even) .tl-dot { left: -8px; }
 .tl-card { padding: 22px 24px; }
 .tl-date { font-family: var(--font-mono); font-size: .78rem; color: var(--accent); font-weight: 600; }
-.tl-card h3 { font-family: var(--font-head); font-size: 1.15rem; margin: 8px 0 8px; }
+.tl-card h3 { font-family: var(--font-head); font-size: 1.15rem; margin: 8px 0 0; }
+.tl-card .add { font-size: .82rem;}
 .tl-card p { color: var(--text-dim); font-size: .92rem; }
 
 @media (max-width: 800px) {
